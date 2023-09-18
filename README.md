@@ -39,7 +39,8 @@ Whether you're a researcher, land manager, or concerned citizen, the Fire Impact
 
 ## User Interface (UI)
 
-![UI](https://github.com/Akis32/GEE_Wildfire_Impact_app/assets/142306838/a244f49a-0781-4bf9-9fb5-d13999bec32c)
+![UI](https://github.com/Akis32/GEE_Wildfire_Impact_app/assets/142306838/225e1858-39b3-4b4d-a1a1-721eda4bff00)
+
 
 
 1. Country selection list
@@ -54,6 +55,8 @@ Whether you're a researcher, land manager, or concerned citizen, the Fire Impact
 
 ## Model Workflow
 
+![Visualization model](https://github.com/Akis32/GEE_Wildfire_Impact_app/assets/142306838/26cbedaa-ccad-4d04-83d0-5f363274b47d)
+
 The workflow to run the visualization model:
 
 - **Step 1:** Define the country you are interested to calculate the wildfire impact from the dropdown list
@@ -67,10 +70,9 @@ The workflow to run the visualization model:
   - Pre-fire SWIR-NIR-Red Band combination that enables burn scar comparisons and identification of cloud coverage.
 
 
-![Visualization model](https://github.com/Akis32/GEE_Wildfire_Impact_app/assets/142306838/59780972-3394-438b-aad9-9e93e739e51d)
-
-
 ## AOI Impact Analysis
+
+![AOI Impact](https://github.com/Akis32/GEE_Wildfire_Impact_app/assets/142306838/04f20129-2c28-4583-bbec-63bd72379bbc)
 
 The Wildfire Impact application enables for furter analysis of user defined Areas Of Interst (AOI). To asses the wildfire impact of specific regions:
 
@@ -83,8 +85,3 @@ The Wildfire Impact application enables for furter analysis of user defined Area
 - **Step 4:** Use the pan icon (UI No7) to exit drawing mode an navigate on the map
 
 **Note**: Cloud coverage can affect results, so ensure your AOI images are cloud-free.
-
-![AOI Impact](https://github.com/Akis32/GEE_Wildfire_Impact_app/assets/142306838/6f5573cc-302f-4f25-b158-91d18fa6898d)
-
-
-
