@@ -36,7 +36,7 @@ Whether you're a researcher, land manager, or concerned citizen, the Fire Impact
 
 ## User Interface (UI)
 
-![UI](https://github.com/Akis32/GEE_Wildfire_Impact_app/assets/142306838/c5eb3428-fa73-4857-8690-aab9ad207455)
+![UI](https://github.com/Akis32/GEE_Wildfire_Impact_app/assets/142306838/a244f49a-0781-4bf9-9fb5-d13999bec32c)
 
 
 1. Country selection list
@@ -71,13 +71,14 @@ The workflow to run the visualization model:
 
 The Wildfire Impact application enables for furter analysis of user defined Areas Of Interst (AOI). To asses the wildfire impact of specific regions:
 
-- **Step 1:** Define the AOI from the custom Drawing Tools (UI No 6). Click on ether polygon or rectangle to specify the AOI. Click a second time on the polygon or rectangle button to reset the polygons an define a defferent AOI. It is good practice to enclose one wildfire per AOI. Large AOI may cause very long processing times
+- **Step 1:** Define the AOI from the custom Drawing Tools (UI No 6). Click on ether polygon or rectangle and draw on the map to specify the AOI. Click a second time on the polygon or rectangle button to reset the polygons an define a defferent AOI. It is good practice to enclose one wildfire per AOI. Large AOI may cause very long processing times
 - **Step 2:** Click on the AOI Impact button
 - **Step 3:** The results will pop up
     - DNBR pixel frequancy in the burn area within the AOI
     - Burn area in ha (This calculation is processing havey and will take some time usually 1 to 3 minutes)
     - KML Export link (UI No 9)
 - **Step 4:** Use the pan icon (UI No7) to exit drawing mode an navigate on the map
+
 **Note**: Cloud coverage can affect results, so ensure your AOI images are cloud-free.
 
 ![AOI Impact](https://github.com/Akis32/GEE_Wildfire_Impact_app/assets/142306838/6f5573cc-302f-4f25-b158-91d18fa6898d)
