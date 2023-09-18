@@ -78,7 +78,7 @@ The Wildfire Impact application enables for furter analysis of user defined Area
 - **Step 2:** Click on the AOI Impact button
 - **Step 3:** The results will pop up
     - DNBR pixel frequancy in the burn area within the AOI
-    - Burn area in ha (This calculation is processing havey and will take some time usually 1 to 3 minutes)
+    - Burn area in ha (This calculation is process heavy and will take some time usually 1 to 3 minutes)
     - KML Export link (UI No 9)
 - **Step 4:** Use the pan icon (UI No7) to exit drawing mode an navigate on the map
 
