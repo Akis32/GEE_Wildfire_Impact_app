@@ -6,7 +6,7 @@ This repository contains the web-based application "Wildfire Impact" for analyzi
 [![WildfireImpactDemo](https://img.youtube.com/vi/hG2sv7bSYec/maxresdefault.jpg)](https://youtu.be/hG2sv7bSYec)
 
 ### Development team: 
-[Minas Chatzigeorgiadis](https://www.linkedin.com/in/minas-chatz/), [Dr Thanos Doganis](https://www.linkedin.com/in/thanos-doganis-41550915/) and [Io Dogani](https://www.linkedin.com/in/dogani-io/), GIS Lab reserch team of [MSc Climate ICT](https://masters.ds.unipi.gr/MSc_Climate_ICT/en/) of [University of Piraeus](https://www.unipi.gr/unipi/en/)
+[Minas Chatzigeorgiadis](https://www.linkedin.com/in/minas-chatz/), [Dr Thanos Doganis](https://www.linkedin.com/in/thanos-doganis-41550915/) and [Io Dogani](https://www.linkedin.com/in/dogani-io/), GIS Lab research team of [MSc Climate ICT](https://masters.ds.unipi.gr/MSc_Climate_ICT/en/) of [University of Piraeus](https://www.unipi.gr/unipi/en/)
 _______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 ## Summary
