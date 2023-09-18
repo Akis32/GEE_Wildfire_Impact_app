@@ -1,4 +1,4 @@
-# Wildfire Impact Application - [LINK](https://ee-my-username32blue.projects.earthengine.app/view/wildfire-impact)
+# Wildfire Impact Application - [Link](https://ee-my-username32blue.projects.earthengine.app/view/wildfire-impact)
 
 This repository contains the web-based application "Wildfire Impact" for analyzing the impact of fires using Google Earth Engine and Google Earth Engine's user interface (UI). Harnessing the power of Google Earth Engine, the "Wildfire Impact" application is designed to visualize, identify, and calculate the impact of wildfires worldwide from Sentinel-2 images, in a mater of minutes.
 
