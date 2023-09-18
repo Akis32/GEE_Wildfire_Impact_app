@@ -51,13 +51,17 @@ Whether you're a researcher, land manager, or concerned citizen, the Fire Impact
 
 ## Model Workflow
 
-To use the visualization model:
+The workflow to run the visualization model:
 
-1. Select your country of interest.
-2. Define the post-fire image collection period.
-3. Define the pre-fire image collection period.
-4. Click the "Run model" button.
-5. Explore layers: Classified DNBR Index, Post-fire SWIR-NIR-Red Band, Pre-fire SWIR-NIR-Red Band.
+- **Step 1:** Define the country you are interested to calculate the wildfire impact from the dropdown list
+- **Step 2:** Define the post-fire image collecton period. This the time period that the model will use to extract and compose post-fire images for further calculations and visualization. The start and end dates must be inputed in the form of yyyy-mm-dd (eg. 2023-09-01), it is good practice to define a period greater than 10 days to esure image availability
+- **Step 3:**  Define the pre-fire image collecton period. This the time period that the model will use to extract and compose pre-fire images for further calculations and visualization. The start and end dates must be inputed in the form of yyyy-mm-dd (eg. 2023-09-01). Try to define a period before the wildfire greater than 30 days to esure image availability. An option is to use 1 or 2 months period after the end of the fire season of the previous year to ensure minimal cloud cover.
+- **Step 4:** Press "Run model" button (UI No 4)
+- **Step 5:** Browse through the layers from the Legend option (UI No 5).
+   The model produces 3 layers on the map:
+  - Classified DNBR Index tht classifies wildfire impact severity 4 categories unburned, low, moderate, and high.
+  - Post-fire SWIR-NIR-Red Band combination that enables rapid visualization of burn scars and identification of cloud coverage.
+  - Pre-fire SWIR-NIR-Red Band combination that enables burn scar comparisons and identification of cloud coverage.
 
 
 ![Visualization model](https://github.com/Akis32/GEE_Wildfire_Impact_app/assets/142306838/59780972-3394-438b-aad9-9e93e739e51d)
@@ -66,6 +70,7 @@ To use the visualization model:
 ## AOI Impact Analysis
 
 The Wildfire Impact application enables for furter analysis of user defined Areas Of Interst (AOI). To asses the wildfire impact of specific regions:
+
 - **Step 1:** Define the AOI from the custom Drawing Tools (UI No 6). Click on ether polygon or rectangle to specify the AOI. Click a second time on the polygon or rectangle button to reset the polygons an define a defferent AOI. It is good practice to enclose one wildfire per AOI. Large AOI may cause very long processing times
 - **Step 2:** Click on the AOI Impact button
 - **Step 3:** The results will pop up
