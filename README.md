@@ -60,8 +60,8 @@ Whether you're a researcher, land manager, or concerned citizen, the Fire Impact
 The workflow to run the visualization model:
 
 - **Step 1:** Define the country you are interested to calculate the wildfire impact from the dropdown list
-- **Step 2:** Define the post-fire image collecton period. This the time period that the model will use to extract and compose post-fire images for further calculations and visualization. The start and end dates must be inputed in the form of yyyy-mm-dd (eg. 2023-09-01), it is good practice to define a period greater than 10 days to esure image availability
-- **Step 3:**  Define the pre-fire image collecton period. This the time period that the model will use to extract and compose pre-fire images for further calculations and visualization. The start and end dates must be inputed in the form of yyyy-mm-dd (eg. 2023-09-01). Try to define a period before the wildfire greater than 30 days to esure image availability. An option is to use 1 or 2 months period after the end of the fire season of the previous year to ensure minimal cloud cover.
+- **Step 2:** Define the post-fire image collecton period. This the time period that the model will use to extract and compose post-fire images for further calculations and visualization. The start and end dates must be inputed in the form of yyyy-mm-dd (eg. 2023-09-01), it is good practice to define a period greater than 10 days to ensure image availability
+- **Step 3:**  Define the pre-fire image collecton period. This the time period that the model will use to extract and compose pre-fire images for further calculations and visualization. The start and end dates must be inputed in the form of yyyy-mm-dd (eg. 2023-09-01). Try to define a period before the wildfire greater than 30 days to ensure image availability. An option is to use 1 or 2 months period after the end of the fire season of the previous year for minimal cloud cover.
 - **Step 4:** Press "Run model" button (UI No 4)
 - **Step 5:** Browse through the layers from the Legend option (UI No 5).
    The model produces 3 layers on the map:
