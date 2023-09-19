@@ -79,7 +79,7 @@ The Wildfire Impact application enables for furter analysis of user defined Area
 - **Step 1:** Define the AOI from the custom Drawing Tools (UI No 6). Click on ether polygon or rectangle and draw on the map to specify the AOI. Click a second time on the polygon or rectangle button to reset the polygons an define a defferent AOI. It is good practice to enclose one wildfire per AOI. Large AOI may cause very long processing times
 - **Step 2:** Click on the AOI Impact button
 - **Step 3:** The results will pop up
-    - DNBR pixel frequancy in the burn area within the AOI
+    - DNBR pixel frequency in the burn area within the AOI
     - Burn area in ha (This calculation is process heavy and will take some time usually 1 to 3 minutes)
     - KML Export link (UI No 9)
 - **Step 4:** Use the pan icon (UI No7) to exit drawing mode an navigate on the map
