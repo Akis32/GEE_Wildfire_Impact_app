@@ -29,7 +29,7 @@ The tool operates in two steps:
 
 2. **AOI Analysis**: Define an AOI, and the tool provides dNBR statistics and calculates the burned area. You can also download the burned area data in KML format.
 
-Whether you're a researcher, land manager, or concerned citizen, the Fire Impact Analysis Tool offers a powerful and accessible way to assess the impact of wildfires and make informed decisions based on geospatial data.
+Whether you're a researcher, land manager, or concerned citizen, the Wildfire Impact Analysis Tool offers a powerful and accessible way to assess the impact of wildfires and make informed decisions based on satellite data.
 
 ## Table of Contents
 
