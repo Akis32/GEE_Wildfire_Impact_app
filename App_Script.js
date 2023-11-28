@@ -1,19 +1,6 @@
 var S2 = ee.ImageCollection("COPERNICUS/S2_SR"),
     LISB = ee.FeatureCollection("USDOS/LSIB_SIMPLE/2017"),
-    geometry = 
-    /* color: #23cba7 */
-    /* displayProperties: [
-      {
-        "type": "rectangle"
-      }
-    ] */
-    ee.Geometry.Polygon(
-        [[[25.585074786392664, 41.245605848118394],
-          [25.585074786392664, 40.81256948643338],
-          [26.27858674928329, 40.81256948643338],
-          [26.27858674928329, 41.245605848118394]]], null, false);
-
-
+    geometry = /* color: #1589ff */ee.Geometry.MultiPoint();
 
 //*********************************************INPUTS****************************************************************//
 
@@ -97,7 +84,7 @@ while (drawingTools.layers().length() > 0) {
 //Initialize a dummy GeometryLayer with null geometry 
 //to act as a placeholder for drawn geometries.
 var dummyGeometry =
-    ui.Map.GeometryLayer({geometries: null, name: 'geometry', color: '23cba7'});
+    ui.Map.GeometryLayer({geometries: null, name: 'geometry', color: '#1589FF'});
 
 drawingTools.layers().add(dummyGeometry);
 
@@ -468,7 +455,7 @@ function model(){
   .remap([1,2,3,4],[1,2,3,4]);  
 
   //Apply focal filter
-  var Kernel = ee.Kernel.square({radius:5,units:"pixels"});
+  var Kernel = ee.Kernel.square({radius:3,units:"pixels"});
 
   var filter_DNBR = class_DNBR.reduceNeighborhood({
     reducer: ee.Reducer.mode(),
@@ -583,12 +570,12 @@ function summary(){
   var class_DNBR = DNBR
   .where(DNBR.gt(-2).and(DNBR.lte(0.125)),1)       //Unburned - Blue
   .where(DNBR.gt(0.125).and(DNBR.lte(0.27)),2)     //Low Severity - yellow
-  .where(DNBR.gt(0.27).and(DNBR.lte(0.45)),3)      //Moderate Severity - Orange
-  .where(DNBR.gt(0.45).and(DNBR.lte(2)),4)         //High severity - Purple 
+  .where(DNBR.gt(0.27).and(DNBR.lte(0.45)),3)     //Moderate Severity - Orange
+  .where(DNBR.gt(0.45).and(DNBR.lte(2)),4)        //High severity - Purple 
   .remap([1,2,3,4],[1,2,3,4]);  
 
   //Apply focal filter
-  var Kernel = ee.Kernel.square({radius:5,units:"pixels"});
+  var Kernel = ee.Kernel.square({radius:3,units:"pixels"});
 
   var filter_DNBR = class_DNBR.reduceNeighborhood({
     reducer: ee.Reducer.mode(),
@@ -644,7 +631,7 @@ function summary(){
     
 
   var chart =
-    ui.Chart.image.histogram({image: DNBR.clip(burnedArea_Polygon_Chart), region: AOI, scale: 500, maxPixels:100000000000000000})
+    ui.Chart.image.histogram({image: DNBR.clip(burnedArea_Polygon_Chart), region: AOI, scale: 50, maxPixels:100000000000000000})
         .setSeriesNames(['DNBR'])
         .setOptions({
           title: 'AOI Impact histogram',
@@ -661,6 +648,7 @@ function summary(){
   resultsPanel.add(chart);
 
   // Add burned area text to the inspector panel
+  
   inspector.clear();
   inspector.style().set('shown', true);
   inspector.add(ui.Label('Calculating burned area...', {color: 'gray'}));
@@ -730,12 +718,12 @@ var controlPanel = ui.Panel({
     ui.Button({
       label: ' Rectangle',
       onClick: drawRectangle,
-      style: {stretch: 'horizontal',Color:'#4863A0'}
+      style: {stretch: 'horizontal',Color:'#C11B17'}
     }),
     ui.Button({
       label:' Polygon',
       onClick: drawPolygon,
-      style: {stretch: 'horizontal',Color:'#4863A0'}
+      style: {stretch: 'horizontal',Color:'#C11B17'}
     })
     ],
   style: {position: 'top-left'},
@@ -813,7 +801,7 @@ var model_run = ui.Button({
     stretch: "horizontal",
     height:'50px',
     fontWeight:'50px',
-    Color:'#BA55D3'
+    Color:'#C11B17'
   }
 });
 
@@ -828,10 +816,9 @@ var aoiImpactButton = ui.Button({
     stretch: "horizontal",
     height:'50px',
     fontWeight:'50px',
-    Color:'#BA55D3'
+    Color:'#C11B17'
   }
 });
 
 panel.add(aoiImpactButton);
-
 
