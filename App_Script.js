@@ -2,6 +2,7 @@ var S2 = ee.ImageCollection("COPERNICUS/S2_SR"),
     LISB = ee.FeatureCollection("USDOS/LSIB_SIMPLE/2017"),
     geometry = /* color: #1589ff */ee.Geometry.MultiPoint();
 
+
 //*********************************************INPUTS****************************************************************//
 
 //After fire end date range
@@ -595,10 +596,15 @@ function summary(){
   
   var burnedAreaha = totalBurnedArea.getNumber("remapped_mode").multiply(0.0001);
   
+  //Mask to clip export only impacted pixels
+  var mask = ee.Image(0)
+              .where(filter_DNBR.gt(1),1)
+              .clip(AOI);
+  
   //Export DNBR of AOI to polygon
-  var burnedArea_Polygon = filter_DNBR.reduceToVectors({
+  var burnedArea_Polygon = filter_DNBR.mask(mask).reduceToVectors({
     geometry: AOI,
-    scale: 10,
+    scale: 20,
     geometryType: 'polygon',
     maxPixels: 10000000000,
     reducer: ee.Reducer.countEvery()
