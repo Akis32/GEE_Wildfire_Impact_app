@@ -449,8 +449,8 @@ function model(){
 
   //Classification of DNBR
   var class_DNBR = DNBR
-  .where(DNBR.gt(-2).and(DNBR.lte(0.125)),1)     //Unburned - Blue
-  .where(DNBR.gt(0.125).and(DNBR.lte(0.27)),2)   //Low Severity - yellow
+  .where(DNBR.gt(-2).and(DNBR.lte(0.12)),1)     //Unburned - Blue
+  .where(DNBR.gt(0.12).and(DNBR.lte(0.27)),2)   //Low Severity - yellow
   .where(DNBR.gt(0.27).and(DNBR.lte(0.45)),3)   //Moderate Severity - Orange
   .where(DNBR.gt(0.45).and(DNBR.lte(2)),4)      //High severity - Purple 
   .remap([1,2,3,4],[1,2,3,4]);  
@@ -475,7 +475,7 @@ function model(){
 
   Map.addLayer(PF_Img,Viz_AG,'(SWIR-NIR-Red) prefire');
   Map.addLayer(AF_Img,Viz_AG,'(SWIR-NIR-Red) postfire');
-  Map.addLayer(filter_DNBR,Viz_class,'DNBR');
+  Map.addLayer(filter_DNBR,Viz_class,'DNBR',false);
 
   //Add legend on the map
   // set position of panel
@@ -569,8 +569,8 @@ function summary(){
 
   //Classification of DNBR
   var class_DNBR = DNBR
-  .where(DNBR.gt(-2).and(DNBR.lte(0.125)),1)       //Unburned - Blue
-  .where(DNBR.gt(0.125).and(DNBR.lte(0.27)),2)     //Low Severity - yellow
+  .where(DNBR.gt(-2).and(DNBR.lte(0.12)),1)       //Unburned - Blue
+  .where(DNBR.gt(0.12).and(DNBR.lte(0.27)),2)     //Low Severity - yellow
   .where(DNBR.gt(0.27).and(DNBR.lte(0.45)),3)     //Moderate Severity - Orange
   .where(DNBR.gt(0.45).and(DNBR.lte(2)),4)        //High severity - Purple 
   .remap([1,2,3,4],[1,2,3,4]);  
